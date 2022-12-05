@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "store-components",
-  "version": "3.163.5-beta1.hkignore",
+  "version": "3.163.5,
   "title": "VTEX Store Components",
   "defaultLocale": "pt-BR",
   "description": "The VTEX store components for that render apps can use",
@@ -39,6 +39,17 @@
     "vtex.styleguide": "9.x",
     "vtex.session-client": "1.x",
     "vtex.image-protocol": "1.x"
+  },
+  "settingsSchema": {
+    "title": "vtex.store-components",
+    "type": "object",
+    "properties": {
+      "enableDefaultSeller": {
+        "title": "Use Default Seller",
+        "description": "Should use default seller to get price",
+        "type": "boolean"
+      }
+    }
   },
   "settingsSchema": {
     "title": "vtex.store-components",
